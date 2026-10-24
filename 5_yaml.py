@@ -22,9 +22,9 @@ class BlogCrew():
         )
         
     @agent
-    def writer(self) -> Task:
+    def writer(self) -> Agent:
         return Agent(
-            config=self.tasks_config['writer_agent'], #type: ignore[index]
+            config=self.agents_config['writer_agent'], #type: ignore[index]
             verbose=True
         )
         
